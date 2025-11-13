@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>V2Ray Sub</title></head>
+<body>
+<pre id="out">Loading...</pre>
+<script>
+(async()=>{
+  const res = await fetch("https://raw.githubusercontent.com/mhstudentfake/Pubilc/refs/heads/main/mhvpn.txt");
+  const data = await res.text();
+  document.getElementById("out").textContent = atob(data);
+})();
+</script>
+</body>
+</html>
